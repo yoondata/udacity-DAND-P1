@@ -174,7 +174,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="P1:-Test-a-Perceptual-Phenomenon">P1: Test a Perceptual Phenomenon<a class="anchor-link" href="#P1:-Test-a-Perceptual-Phenomenon">&#182;</a></h1><h3 id="Sangyoon-Park-|-14-FEB-2016">Sangyoon Park | 14 FEB 2016<a class="anchor-link" href="#Sangyoon-Park-|-14-FEB-2016">&#182;</a></h3>
+<h1 id="P1:-Test-a-Perceptual-Phenomenon">P1: Test a Perceptual Phenomenon<a class="anchor-link" href="#P1:-Test-a-Perceptual-Phenomenon">&#182;</a></h1><h3 id="Sangyoon-Park-|-15-FEB-2016">Sangyoon Park | 15 FEB 2016<a class="anchor-link" href="#Sangyoon-Park-|-15-FEB-2016">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -214,7 +214,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Our null hypothesis is that the task performance does not (statistically) differ between the congruent and incongruent conditions. Our alternative hypothesis is that the task performance (statistically) differs between the two conditions. In notation:</p>
 $$ H_{0}: \mu_{C} - \mu_{I} = 0 $$$$ H_{A}: \mu_{C} - \mu_{I} ≠ 0 $$<p>where $\mu_{C}$ and $\mu_{I}$ are population means for the congruent and incongruent conditions, respectively. Or, using $\mu_{D} = \mu_{C} - \mu_{I}$:</p>
-$$ H_{0}: \mu_{D} = 0 $$$$ H_{A}: \mu_{D} ≠ 0 $$<p>Since we are comparing two different conditions <em>within</em> the same participants (i.e. repeated measures design), we need to employ the dependent samples t-test. This statistical test assumes the sample of differences is <em>approximately</em> normal [1]. Also, the t-test should be two-tailed as we do not have sufficient ground to presume a certain direction for the potential difference.</p>
+$$ H_{0}: \mu_{D} = 0 $$$$ H_{A}: \mu_{D} ≠ 0 $$<p>Since we are working with a sample of the size below 30 and do not know the population parameters (specifically the population standard deviation), we employ the t-test to examine our hypotheses [1]. Specifically, as we are comparing two different conditions <em>within</em> the same participants (i.e. repeated measures design), we need to employ the dependent samples t-test. This statistical test assumes the sample of differences is <em>approximately</em> normal, but the test is "robust" to violations of normality [2]. Also, the t-test should be two-tailed as we do not have sufficient ground to presume a certain direction for the potential difference.</p>
 
 </div>
 </div>
@@ -382,8 +382,9 @@ IQR          6.613
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># The following histograms were constructed through R</span>
-<span class="c"># The script is included in the repo</span>
+<div class=" highlight hl-ipython2"><pre><span class="c">## The following plots were constructed through R.</span>
+<span class="c">## The script is included in my GitHub repo at:</span>
+<span class="c">## https://github.com/yoondata/udacity-DAND-P1</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
 <span class="n">Image</span><span class="p">(</span><span class="s">&quot;C:/Users/Sangyoon Park/Desktop/Udacity_DAND/P1/performance_hist.png&quot;</span><span class="p">)</span>
 </pre></div>
@@ -531,19 +532,149 @@ HuyB9WAPrAd7/D8axhL9LYaP1QAAAABJRU5ErkJggg==
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">Image</span><span class="p">(</span><span class="s">&quot;C:/Users/Sangyoon Park/Desktop/Udacity_DAND/P1/performance_box.png&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
+
+
+<div class="output_png output_subarea output_execute_result">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAvUAAAJECAMAAAChCitvAAAAflBMVEUAAAAAADoAAGYAOpAAZrY6
+AAA6ADo6OgA6OpA6kNtmAABmADpmtrZmtv9/f/+QOgCQOjqQZgCQkGaQtpCQ27aQ29uQ2/+2ZgC2
+Zma2kDq2tma225C2/7a2/9u2///bkDrb2//b/7bb////f3//tmb/trb/25D//7b//9v///8e+3CU
+AAAACXBIWXMAAAsSAAALEgHS3X78AAAVNElEQVR4nO3dDXviOn6GcWdCThe6lO62DX0db1M2wPf/
+grXlNxEgsoOE/Pdz/67rzMnJKELI9zjGyckUZ0BNkXsBwNNRPfRQPfRQPfRQPfRQPfRQPfRQPfRQ
+PfRQPfRQPfRQPfRQPfRQPfRQPfRQPfRQPfRQPfRQPfRQPfRQPfRQPfRQPfRQPfRQPfRQPfRQPfRQ
+PfRQPfRQPfRQPfRQPfQsrPp90VvdHfLrt//fZTv+8r1f5rw32YNOu+L14/rd3ZLc77VjmlVMXsu/
+e8/q8O3T9NV71K2tmuHOMu2i+i6x4uX95njXyjryOluB6oti241pVjF1LcfN8FyPm3bOER8/VO9m
+oPp5e6T6O0e2vPfHIZ1hSf1DN6uYuhbvuVblen+URn/c191ahoVVX6uOb1v851sfTtln7Y5jNaY7
+mmXzVnUqdCP7a4iqsH95K17+oYvPTbb2fudfN8Xq4CIqu0cZHrDuc99Xexhiu7hGaU6il2MvllQN
+dWPcn+ZhLV8X+eVd3Wx775KmXWMdv9uGi6fjPbx7qz/XNzP8z+7bjxn21oolV38YzpflcO3uqt/7
+Z9GmC3cebS8D6vc0H/L6l3aKcvh80P7O/3aXDP2HXD/g8Cep6cWbv12qq/7qxN4MqEa/flxXf73I
+j6t3udm86vs/5qdd+2fjy9MZ/lC0M11Xf+djvL21YsHVN/+uzk/rOp+Vi3LdVH/wPs0PJ1b3p6H6
+pXpz7Q6mO3+V3Zm+6XP4nbq09bk/26/9B6zfUc3UjHePezV/u8Rm1n6sv6TmjeHzQbeWG4u8fFc/
+23B90uxA78vT8Ze6cn9Ku8ftPjNWb975GH9vrVhw9U7pPvFXB6w/FVXH8b/evEPkX9e3PZbtId02
+v9+X1v6r/R13Jm5//exnbB6wHVO9e9V9bDn03lfdV9+Pbefoq395v6r+xiKv3+U/cu3z7aLK66fj
+f4D7E3pV/Z2P8ffWiiVX3326XnVvrev37usrBe9FoX8Px1249pc03VVr9e/uLkbp/U5zkmt+baIa
+HrAd437TuwPiz9+usC/aOxt/X/2NRV6/q5ntXvU3nk631FWzR9fVf/Mx/d5aseDq3eHY9m062+4i
+e3jx5d8cPxRXQfXnVzfnobmcuV29/4A3Ujpfzt8ucXr1NxZ5/a6v1V9e4dx4Ou5d3ftvVX/vY/y9
+tWLB1Tent/5wd3caqupf/+P6uv7cfoj3/qnnev8B757rL9oIVO9egt46139d5PW7vlZ/+Wr2m/N2
+/zJh7Lne31srFlz9obv2XFfv++fmXkr7grK5GG/41ftnxIvqv1zU3q7ef8Dr9g7epwxvqd9UX3/u
+WJ2vqr+xyOt3fa3+y53L66fjf8CY6/rhY7y9tWLB1bt7Dk05ze0H7+B5N3H86utPBNv2Bepl9Zc3
+MO6e67sHvMji0L202Przt0u9Xb13xXLrHs7VIq/e5X/G6R6qs731dLyl+vdwvM90dz7G31srFlx9
+f5xXfUf9Wds7SBfVt9eo/tdBy+7LTt1c31/XX7+a7e/Xry7mb5f4ffXb843qbyzy6l19xP6V/fAU
+rp/O5VL76t0Ml/frv36Mt7dWLLh6V+HLe1O1u8sxfIa+uNXof2p25Xr36Yd/uxm8e5l37uG0D3hZ
+8vD9M8P87X99V7333WcX35Fwvcirdw0RDzVefPfZ16czvJCt3u1991k9w7/5X5u9/phhb61YYPVA
+ANVDD9VDD9VDD9VDD9VDD9VDD9VDD9VDD9VDD9VDD9VDD9VDD9VDD9VDD9VDD9VDD9VDD9VDD9VD
+D9VDD9VDD9VDD9VDD9VDD9VDD9VDD9VDD9VDD9VDD9VDT+TqCyCfXNXHnQ6YgOqhh+qhh+qhh+qh
+h+qhh+qhh+qhh+qhh+qhJ0n1x8363Py97Hf/+nSqRz7pqi9fP+q3to9PBwsmfHdLdsmqb3t37T84
+HQwozoYOarLqP99c9Yc71zhmNgijFN6v88e5HjFQfVV8/T3Mq3P3uvbB6TB/VF+rwn95Px+KdZzp
+MHdc1z9/OmQnfw/nm1km/z9cQHQpqz8U9VVOtOmASBJVvy+K9eefPvgqFeYoTfX714/z3p3nuXOJ
++Ul057I6w3/+UVfPV6kwPwm/++z0tzPnesxRmiucsjvD81UqzFCiV7Nlc/PmUNx5MUv1i2PpbjRf
+pUIUfG32+dMhM74PJ8N0yIzqM0yHzKg+w3TIjev650+H7LiH8/TpgAmoHnqoHnqoHnqoHnqoHnqo
+HnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqo
+HnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqoHnqo
+HnqoHnqoHnqoHnoSVX/aFc6v31GmA2JKU31ZrJs3Dt0bD00HRJWk+tNu3b1Zvn48PB0QV5Lqj5tt
+9+bhzjUO1SMfzvXQk+q6vj3Zc12PGUp0D+e4ae7h3DnTUz1y4n499Dy5+qIXZTrgJ1JWfyiKl/d4
+0wGRJKp+XxTrzz99+PcwH5kOiClN9fvqVezenee5c4n5SfdVqs8/6ur5KhXmJ1H16+rX09/OnOsx
+R4m+StWd4Zv+H50OiCrRq9myuXlzKO68mKV6ZMRXqaCH6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH
+6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH
+6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH6qGH6uEr8nj2s4w+
+MMt0yM/QIaV6RGLokFI9IjF0SKkekRg6pFQPPVQPPVQPPVSPSAwdUqpHJIYOaZLqj5t19euhKIpf
+vyNMBxMMHdJ01ZevH/Vb28engwmGDmmy6tveXfsPTgcTDB3SZNV/vrnqD3eucQxtERaHcz30JKq+
+/u7R1bl7XfvgdEBcqe5cVuG/vJ8PxTrOdJg/Q4eU+/WIxNAhfXL12f7vGSRn6JAmqr6sum5ezXIP
+R4WhQ5qm+rK6pj9u6pezVC/D0CFNUv1pt3a/vn5QPWYo0Z3L5vsQ9q8fVI/5SXiur+xXVI/5SXRd
+37Z+3Nz7rkuqXxxDhzTZPZzmGue0o3oVhg4pX6VCJIYOKdUjEkOHlOoRiaFDSvULlOcntGbyow2K
+PjDLdPAV/6eD6tGg+tAGRR+YZTr4qD60QdEHZpkOPqoPbVD0gVmmg4/qQxsUfWCW6eCj+tAGRR+Y
+ZTr4qD60QdEHZpkOPqoPbVD0gVmmg4/qQxsUfWCW6eCj+tAGRR+YZTr4qD60QdEHZpkOPqoPbVD0
+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
+MZJUf9qtuzfL14+Hp8vN0loxRpLqj5tt9+bhzjWOpZIsrRVjcK4Ps7RWjJHqur492S/iuh5Lk+ge
+znHT3MO5c6aneuTE/XroeXL1Jn/ai6W1YgzO9WGW1ooxqD7M0loxRqL79cOVDPfrMTtpzvWn3d1v
+wPnJdJlZWivGSPbdZ6uY0wExpbquPxTbb3+f6pEPr2ahh+rDLK0VY1B9mKW1YgyqD7O0VoxB9WGW
+1ooxqD7M0loxBtVDD9VDD9VDD9WHWVorxqD6MEtrxRhUH2ZprRiD6sMsrRVjqFRfZPLkp4lRVKoH
+BlQPPVQPPVQPPVQPPVQPPVQPPVQPPVQPPVQPPVQPPVQPPVQPPVQPPdmqB/LJVL0lwk99iiVu0xKf
+00jCT32KJW7TEp/TSMJPfYolbtMSn9NIwk99iiVu0xKf00jCT32KJW7TEp/TSMJPfYolbtMSn9NI
+wk99iiVu0xKf00jCT32KJW7TEp/TSMJPfYolbtMSnxPwPaqHHqqHHqqHHqqHHqqHHqqHHqqHHqqH
+HqqHHqqHHqqHHqqHnuVWf9oVRfH68cAMh220xczQ4eU93lzGdmqx1R+KdfXr/oFDe9wYO5bTRKze
+3E4ttfrPN3cgTrufn+3NHctpqH55yrb2v/8+1+f9oj7zHzd/3hRFfYD2RfHy15f34z/+tfj13/Uh
+c8etvBj2+fbgBdLMVdUPG1I/9dVZZqcWWv1ptxr+41Adv+NmVf1Tnd7K6p/9r9/VO+ujXh2sY3cs
+69/5fFv3w8ydwaZx1bcbUv9z3Kxldmqh1deHsHPa1W+7g7x2lz7N1c++fUd3LJsPOfz63Q0zdyyn
+8Tak2y2ZnRKovjl03cGpfqmO17k9uNvhWDbXud4wc8dyGu/5ty+CdHZqodX7VzjNsewOTvVLeftY
+tj8X1+6xnMav/o/mha3MTi20+v7V7KHYTjqDnf1P5MaO5TSPnuvPhndqqdV7dy69q1X/IJf9O9aX
+F6dmj+U03obcuK5f9k4ttfrmq1SnXX1aGu5MtCes4c7EtvuDUTR3JppXbpctLJR/Bq+fen1RqLJT
+i62+Ohr9dyT0d6G7T9P7ovj1n/U9iG078M/dXejqKA+H3Nhd6Gkurluu7tcve6eWW31Ic82KsOXt
+lGL17mrV3GflHJa6U4rVu8/jhbEXYHksdKckq4c4qoceqoceqoceqoceqoceqoceqoceqoceqoce
+qoceqoceqoceqoceqoceqoceqoceqoceqoceqoceqoceqoceqoceqoceqoceqoceqoceqoceqoce
+qoceqoceqoceqoceqoceqoceqoceqoceqoceqoceqoceqoceqoceqoceqoceqoceqoceqoceqoce
+qoceqoceqoceqoceqoceqoceqoceqoceqoceqoceqoceqoee/wfbFdbq8ObcswAAAABJRU5ErkJg
+gg==
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Both congruent and incongruent conditions display an approximately normal distribution. However, it need to be noted that the incongruent condition has some unusual observations, which explains the larger variability in the incongruent condition.</p>
+<p>Both congruent and incongruent conditions display an approximately normal distribution. However, it need to be noted that the incongruent condition has some outliers, which explains the larger variability in the incongruent condition.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">Image</span><span class="p">(</span><span class="s">&quot;C:/Users/Sangyoon Park/Desktop/Udacity_DAND/P1/difference_hist.png&quot;</span><span class="p">)</span>
@@ -557,7 +688,7 @@ HuyB9WAPrAd7/D8axhL9LYaP1QAAAABJRU5ErkJggg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
 
 
 <div class="output_png output_subarea output_execute_result">
@@ -685,12 +816,125 @@ eGA9xAPrIR5YD/HAeogH1kM8sB7igfUQD6yHeGA9xOP/AT6RsDhb7YRhAAAAAElFTkSuQmCC
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">Image</span><span class="p">(</span><span class="s">&quot;C:/Users/Sangyoon Park/Desktop/Udacity_DAND/P1/difference_box.png&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[5]:</div>
+
+
+<div class="output_png output_subarea output_execute_result">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAvUAAAJECAMAAAChCitvAAAAYFBMVEUAAAAAADoAAGYAOpAAZrY6
+AAA6ADo6OgA6kNtmAABmZmZmtv+QOgCQZgCQtpCQ27aQ29uQ2/+2ZgC2Zma2/7a2/9u2///bkDrb
+/7bb/9vb////tmb/25D//7b//9v///9rzRkIAAAACXBIWXMAAAsSAAALEgHS3X78AAARsUlEQVR4
+nO3da0Pb3LVFYRFIi2tOW2iLe3CA//8vK+tiyxfhhZeEvecczwdCgWh7bY9XkRVKqk/ATXXtBwD8
+OKqHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qH
+H6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHnxKrX1WtX68jX/BSf/Jh5sXv3+r/
+8fHU/NquN9eq3SKf/3rdrH73fPDhkcdXnfxs9yXbg+z/ntEN3ax9uN7I+iO/+7aUXP3hk9dbbz73
+OPfi1bJ/5tv1Zlu1XeR98Wv26sc2tFn74urbR35Tiq5+ZNuPntV5Ft8u0q4366qbP08Oqj/7+C6o
+fuT3vHzxp8B5ud89izKrb7bxfdE+e9sri/rZ/Pvv6u6vfZJ/fvdn3+4z/1hUD+vmLL3qo22+pnl3
+08LLtuV1dzb/PLxe2i1ef7A53700621XPXw4Bx86v0Z7Et1ePN3//3aRX6+DA7RfsH/E3ePr7MYb
+LDf2e7oN3duS7Yb++k93bu8P065fJ/3vRX9tdHIzX76+drqKgqtvz1mb/LptbU9Z9//X9bfanb66
+z/x3UQ1sfst6d9ruT3jb/5La/2QGx99bvP74/dtx9ccP5+3oQ+fWaJZoE6zfPn7sVb997H31R3/w
+DApbn1zu6DJ+b0OPtqTd0L767WH66ndffnozqX4au1NT/etLl0j7bDZno1V/ymqr2H1mU9fj5/Zs
+3zxzD81Xtl9TH6n9+vXm7dHxh4u37+zOt/2qJx7O/ocCa/z53cW33Dy05fak+tofc7WrbnjE7mH1
+lnvjDZYbHOR4Qw+2ZDfB9jXM4/YL2+rrz627P/hObiZXOJMYXoZ2ray6TV62n9/21/3SfaY5P3dv
+22enP9zDZ/c19YcfthfRuxZ3Z9BB9XfPR9WfeDjHHzq3Rn3Ux/p//a15u8urq37ZHXJb/faIB5uz
+3Btvt9zwIMcberwle9XvDrOtfvk5KHt0M29K0dXXmTWXkt37/au05tf+FsNq8Jn6iX7o37bV11/V
+eOj/W2k+Obg9MTx+t/hX1Z94OMcfOrvGy+Y+aH1J/dC8t1/9wQEGHzjYnO7auxtveMdl/Pd0rxf2
+t2RY/eAww4e13fITm0n10xjeMl8PnrC96vsndd1ezpyuvnmelu0H9oPqgxgev1v8q+pPPJzjD51d
+Y715CVu/StxcSy+/Xf2uscF4g+XGq99s6PGWHFS//6K7S3qzyyObSfXTGD6xmwvf3ce/e65vT/in
+qh+ch5cnF6+/5sR1/YmHc/yhs2u8L+oTff0Ktn67neSS6gfjnTnXn/w93zzXj2wm1U9j+CQNnrv9
+6g+u609Xv+4vPx9PPVHrwR8Zh4tvTmz75e39CTN4OMcfOrtGfdi/dZf223uYl1Q/HG+3XPz3HFc/
+OMzRdf3Xm3lTSq++3fb2Bep+9fv3cEbP9c356/D01N+TqA89OH63+OB65NQ9nKOHc/Shs2s0iyyb
+K5/HzxOLxK7rf70Oxxssd+5cf7Ale3947g5zdA9nbDNn/uu7SxRffXeve5fE9tfV9rXV19f1J16A
+9behH/aO3y2+/2rxOMjDh3P0obNrbB5ce7l09zz8tof2b6ni1Q/HGyx3/rXAwavZZu39+/W7F9n9
+YqOb2T7yOUK4WPHVt5s9uE+/+7W5NzK4lzlyD+fuebW7Chq8CO7uZ++O3y2+e+V3ovoTD+foQ2fX
+aF80dG8H3+K2eaTfqX443mC5L6s/3pLPdu1/Dv9u9nFwXV//57DdjZObuff3wDehxOpxO27woj2A
+6pFB9fBD9fBD9UAZqB5+qB5+qB5+qB5+qB5+qB5+qB5+qB5+qB5+qB5+qB5+qB5+qB5+qB5+qB5+
+qB5+qB5+qB5+qB5+qB5+qB5+qB5+qB5+qB5+qB5+qB5+Jq6+Aq7nWtVPezjgG6gefqgefqgefqge
+fqgefqgefqgefqgefqgefqgefqgefqgefqgefqj+em78u2yFUX2R2L4Uqi8S25dC9UVi+1Kovkhs
+XwrVww/Vww/Vww/VF4ntS6H6IrF9KVRfJLYvheqLxPalUH2R2L4Uqocfqocfqocfqi8S25dC9UVi
++1KovkhsXwrVF4ntS6H6IrF9KVQPP1QPP1QPP1RfJLYvheqLxPalUH2R2L4Uqi8S25dC9UVi+1Ko
+Hn6oPulKP5j4Oq692VOh+iSZQQJkZqX6JJlBAmRmpfokmUECZGal+iSZQQJkZqX6JJlBAmRmpfok
+mUECZGal+iSZQQJkZqX6JJlBAmRmpfokmUECZGal+iSZQQJkZqX6JJlBAmRmpfokmUECZGal+iSZ
+QQJkZqX6JJlBAmRmpfokmUECZGal+iSZQQJkZqX6JJlBAmRmpfokmUECZGal+iSZQQJkZqX6JJlB
+AmRmnaX698Vj/XZdVdWv1wkOd9NkBgmQmXW+6lf3b5v3lvnD3TSZQQJkZp2t+q73pv3k4W6azCAB
+MrPOVv2f303165FrHL8NFCAzK+f6JJlBAmRmnan6zQ/KevjsX9cmD3fTZAYJkJl1rjuXdfh3z5/r
+6iB64x8eJ0BmVu7XJ8kMEiAz65zVfzyNXN5cdrjbJDNIgMysVJ8kM0iAzKxUnyQzSIDMrFSfJDNI
+gMysVJ8kM0iAzKzcw0mSGSRAZlaqT5IZJEBmVqpPkhkkQGZWqk+SGSRAZlaqT5IZJEBmVqpPkhkk
+QGZWqk+SGSRAZlaqT5IZJEBmVqpPkhkkQGZWqk+SGSRAZlaqT5IZJEBmVqpPkhkkQGZWqk+SGSRA
+ZlaqT5IZJEBmVqpPkhkkQGZWqk+SGSRAZlaqT5IZJEBmVqpPkhkkQGZWqk+SGSRAZlaqT5IZJEBm
+VqpPkhkkQGZWqk+SGSRAZlaqT5IZJEBmVqpPkhkkQGZWqk+SGSRAZlaqT5IZJEBmVqpPkhkkQGZW
+qk+SGSRAZlaqT5IZJEBmVqpPkhkkQGZWqk+SGSRAZlaqT5IZJEBmVqpPkhkkQGZWqk+SGSRAZlaq
+T5IZJEBmVqpPkhkkQGZWqk+SGSRAZlaqT5IZJEBmVqpPkhkkQGZWqk+SGSRAZlaqT5IZJEBmVqpP
+khkkQGZWqk+qnFx7s6dC9UnXDvFHXXuzp0L1SdcO8Udde7OnQvVJMoMEyMxK9UkygwTIzEr1STKD
+BMjMSvVJMoMEyMxK9UkygwTIzEr1STKDBMjMSvVJMoMEyMxK9UkygwTIzEr1STKDBMjMSvVJMoME
+yMxK9UkygwTIzEr1STKDBMjMSvVJMoMEyMxK9UkygwTIzEr1STKDBMjMSvVJMoMEyMxK9UkygwTI
+zEr1STKDBMjMSvVJMoMEyMxK9UkygwTIzEr1STKDBMjMSvVJMoMEyMxK9UkygwTIzEr1STKDBMjM
+SvVJMoMEyMxK9UkygwTIzEr1STKDBMjMSvVJMoMEyMxK9UkygwTIzEr1STKDBMjMSvVJMoMEyMxK
+9UkygwTIzDpT9R9P7Y/5//U6yeFumMwgATKzzlP9qnps31n376QOd8tkBgmQmXWW6j+etq2v7t/S
+h7tpMoMEyMw6S/Xvi2X/7nrkGsdvAwXIzMq5PklmkACZWee6ru9O9lzXK5GZdaZ7OO+L9h7OyJne
+cQMFyMzK/fokmUECZGal+iSZQQJkZqX6JJlBAmRm/eHqjf9xdgEys850v35XN/frdcjMOs+5/uNp
+9BtwLjncLZMZJEBm1tm+++xhysPdMJlBAmRmneu6fl0tv/y83wYKkJmVezhJMoMEyMxK9UkygwTI
+zDpn9YNvQpvicLdJZpAAmVmpPklmkACZWak+qXJy7c2eCtUXie1LofoisX0p3MMpEtuXQvXwQ/Xw
+Q/XwQ/VFYvtSqL5IbF8K1ReJ7Uu5pPr3RXX/9jJ+L37SdXEK25dyQfXru+fV/dv7IpU9T1sK25fy
+/eo3f+O6+Tl+q3P/J8Fp1gUm9/3qNz+6dVP92M9tnXhdYHKXn+tfRn+a36TrApO7+Lp+deb/GDvV
+ujiF7Uu58B5OVd09/8y6OIXtS+F+fZHYvhSqLxLbl3JB9f3P8+MezvWwfSmX3MNJ3bz57rrA5C67
+X/+D6wKTu+x+/Q+uC0zuguv6P3/J3bT83ro4he1LuaT637yavTa2L+WSK5wzP6R72nVxCtuXwqvZ
+IrF9KbyaLRLbl8KrWfi55Aqn4tUsisb34cAP1ReJ7Uuh+iKxfSnfrP598ch1/Q1g+1I41xeJ7Uuh
++iKxfSnfvsKZ4i9mv7MuMDmqhx+qhx+qLxLbl/Lt6nf/+Ch3Lq+H7UvhXF8kti+F6ovE9qVQfZHY
+vhSqhx/+bhZ+qB5+qL5IbF8K1ReJ7Uuh+iKxfSlUXyS2L4Xqi8T2pVA9/FA9/FA9/FB9kdi+FKov
+EtuXQvVFYvtSqL5IbF8K1ReJ7Uuhevihevihevih+iKxfSlUXyS2L4Xqi8T2pVB9kdi+FKovEtuX
+QvXwQ/XwQ/XwQ/VFYvtSqL5IbF8K1ReJ7UuZpfr3xWP9dv3Vv2fC05bC9qXMV/3q/u2Ln/zN05bC
+9qXMVn3Xe9N+8nDAtGar/s/vpvr1yDUO1eN6ONfDz0zVb/5lzofP/nVt8nA4wvalzHXnsg7/7vlz
+XY1Ez9OWw/alcL++SGxfCtUXie1LofoisX0pP1x9tTXJ4YBLzHgPp8X9etycec71H0+j34BzyeGA
+Sc10hfPx9DDl4XCA7UuZ67p+XY1829llh8M+ti+FezhFYvtSqL5IbF/KnNV/PI19PwJPWxLbl0L1
+8EP18EP18EP1RWL7UriHUyS2L4Xqi8T2pVB9kdi+FKovEtuXQvXwQ/XwQ/XwQ/VFYvtSqL5IbF8K
+1ReJ7Uuh+iKxfSlUXyS2L4Xq4Yfq4Yfq4Yfqi8T2pVB9kdi+FKovEtuXQvVFYvtSqL5IbF8K1cMP
+1cMP1cMP1ReJ7Uuh+iKxfSlUXyS2L4Xqi8T2pVD99VTXce2xbwDVww/Vww/Vww/Vww/Vww/Vww/V
+ww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/V
+ww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vww/Vw89M
+1X88VY1fr5McDpjSPNWvqsf2nXX/TupwwKRmqf7jadv66v4tfThgWrNU/75Y9u+uR65xqB7Xw7ke
+fua6ru9O9lzX4wbNdA/nfdHewxk501M9ron79fBD9fAzU/Wr+uqmubRfcQ8HN2emV7N3z/Wl/cPn
+UfXV1ncOB0xqxjuXH0/1a1nO9bg9s/4t1cv9G9Xj9sz7t1QvD1SP2zPTdX3X+vti7LsuqR7XM9s9
+nPYa5+OJ6nFzuF8PP3NWP/gmtCkOB0yE6uGH6uGH6uGH6uGHezjwQ/XwQ/XwQ/XwQ/XwQ/XwQ/Xw
+Q/XwQ/XwQ/XwQ/XwQ/XwQ/XwQ/XwQ/XwQ/XwQ/XwQ/XwQ/XwQ/XwQ/XwQ/Ul4l+9yKH6AlWfbGAK
+1ZenGrzFJai+PFSfRfXlofosqi8Q1/VJVF8i7uHkUD38UD38UD38UD38UD38UD38UD38UD38UD38
+UD38UD38XK164HquVD1QAKqHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qH
+H6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qH
+H6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qH
+H6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qH
+H6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qHH6qH
+H6qHH6qHH6qHH6qHH6qHH6qHn/8BIZeKhdGqv0YAAAAASUVORK5CYII=
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Although performance difference within each participant displays a negatively skewed distribution, the skew is not substantial and we can claim the distribution is <em>approximately</em> normal. Since the dependent t-test is "robust" to violations of normality [1], we proceed with our choice of the test.</p>
+<p>Although performance difference within each participant displays a negatively skewed distribution, the skew is not substantial and we can claim the distribution is <em>approximately</em> normal. Since the dependent t-test is "robust" to violations of normality [2], we proceed with our choice of the test.</p>
 
 </div>
 </div>
@@ -728,7 +972,7 @@ eGA9xAPrIR5YD/HAeogH1kM8sB7igfUQD6yHeGA9xOP/AT6RsDhb7YRhAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Although different theories exist that explain the Stroop effect, their common gist seems that two incongruent stimuli activate different cognitive representations which compete for the central attentional and executive functions [2]. This cognitive "rivalry" then results in impeded response behavior. In contrast, if the entering stimuli are congruent, then they help each other to reinforce activation of the common cognitive representation, resulting in unimpeded and even enhanced response behavior. The similar effect can be observed in a task where the participant evaluates inequality of two different numbers, the (numerically) larger of which is printed in a smaller font size [2]. Presented with the incongruence between numerical and physical inequalities, the participant tends to perform worse. The effect is also relevant to what social psychologists have observed through the implicit-association test (IAT), where task performance tends to deteriorate when a certain descriptive word (e.g., good) is presented in conjunction with a social stimulus that is often associated with the opposite descriptive word (e.g., the face of a black person) [3].</p>
+<p>Although different theories exist that explain the Stroop effect, their common gist seems that two incongruent stimuli activate different cognitive representations which compete for the central attentional and executive functions [3]. This cognitive "rivalry" then results in impeded response behavior. In contrast, if the entering stimuli are congruent, then they help each other to reinforce activation of the common cognitive representation, resulting in unimpeded and even enhanced response behavior. The similar effect can be observed in a task where the participant evaluates inequality of two different numbers, the (numerically) larger of which is printed in a smaller font size [3]. Presented with the incongruence between numerical and physical inequalities, the participant tends to perform worse. The effect is also relevant to what social psychologists have observed through the implicit-association test (IAT), where task performance tends to deteriorate when a certain descriptive word (e.g., good) is presented in conjunction with a social stimulus that is often associated with the opposite descriptive word (e.g., the face of a black person) [4].</p>
 
 </div>
 </div>
@@ -739,9 +983,10 @@ eGA9xAPrIR5YD/HAeogH1kM8sB7igfUQD6yHeGA9xOP/AT6RsDhb7YRhAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="References">References<a class="anchor-link" href="#References">&#182;</a></h3><ul>
-<li>[1] A webpage illustrating assumptions of the dependent t-test: <a href="https://statistics.laerd.com/spss-tutorials/dependent-t-test-using-spss-statistics.php">https://statistics.laerd.com/spss-tutorials/dependent-t-test-using-spss-statistics.php</a></li>
-<li>[2] A Wikipedia page on the Stroop effect: <a href="https://en.wikipedia.org/wiki/Stroop_effect">https://en.wikipedia.org/wiki/Stroop_effect</a></li>
-<li>[3] A YouTube video that demonstrates the IAT for racial prejudice: <a href="https://www.youtube.com/watch?v=n5Q5FQfXZag">https://www.youtube.com/watch?v=n5Q5FQfXZag</a></li>
+<li>[1] A webpage illustrating requirements of the t-test: <a href="http://www.statisticshowto.com/when-to-use-a-t-score-vs-z-score/">http://www.statisticshowto.com/when-to-use-a-t-score-vs-z-score/</a></li>
+<li>[2] A webpage illustrating assumptions of the dependent t-test: <a href="https://statistics.laerd.com/spss-tutorials/dependent-t-test-using-spss-statistics.php">https://statistics.laerd.com/spss-tutorials/dependent-t-test-using-spss-statistics.php</a></li>
+<li>[3] A Wikipedia page on the Stroop effect: <a href="https://en.wikipedia.org/wiki/Stroop_effect">https://en.wikipedia.org/wiki/Stroop_effect</a></li>
+<li>[4] A YouTube video that demonstrates the IAT for racial prejudice: <a href="https://www.youtube.com/watch?v=n5Q5FQfXZag">https://www.youtube.com/watch?v=n5Q5FQfXZag</a></li>
 </ul>
 
 </div>

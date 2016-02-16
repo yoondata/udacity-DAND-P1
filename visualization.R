@@ -15,6 +15,13 @@ hist(data[,1], col=rgb(0,0,1,0.5), breaks=seq(from=8, to=36, by=2),
 hist(data[,2], col=rgb(1,0,0,0.5), breaks=seq(from=8, to=36, by=2), add=TRUE)
 legend("topright", c("Congruent", "Incongruent"), col=c(rgb(0,0,1,0.5), rgb(1,0,0,0.5)), lwd=10)
 
+# Making a box plot
+boxplot(data[,1], data[,2],
+        names=c("Congruent", "Incongruent"),
+        col=c(rgb(0,0,1,0.5), rgb(1,0,0,0.5)),
+        ylab="Time",
+        main="Task Performance in Different Conditions")
+
 # Adding a new column
 data[,3] = data[,1] - data[,2]
 names(data)[3] = "Difference"
@@ -28,3 +35,8 @@ max(data[,3])
 hist(data[,3], breaks=seq(from=-22, to=0, by=2),
      xlab="Difference in Time", ylab="Frequency", 
      main="Performance Difference within Each Participant")
+
+# Making a box plot
+boxplot(data[,3],
+        ylab="Time",
+        main="Performance Difference within Each Participant")
